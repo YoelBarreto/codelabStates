@@ -18,7 +18,7 @@ fun App() {
     MaterialTheme {
         Surface {
             Column {
-                EpisodiosCounter()
+                BanioCounter()
                 WellnessTaskList()
             }
         }

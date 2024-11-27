@@ -6,24 +6,24 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 
 @Composable
-fun EpisodiosCounter() {
-    var episodiosContador by rememberSaveable() { mutableStateOf(0) }
+fun BanioCounter() {
+    var baniosContador by rememberSaveable() { mutableStateOf(0) }
     Column {
-        if (episodiosContador > 0){
-            val episodiosTexto = if (episodiosContador == 1 ) "episodio" else "episodios"
-            Text("Te has visto ${episodiosContador} ${episodiosTexto} de DanDaDan")
+        if (baniosContador > 0){
+            val baniosTexto = if (baniosContador == 1 ) "vez" else "veces"
+            Text("Has ido al baño ${baniosContador} ${baniosTexto}")
         }
         Row {
             Button(
                 onClick = {
-                    episodiosContador++
+                    baniosContador++
                 }
             ) {
-                Text("Ver episodio")
+                Text("Ir al baño")
             }
             Button(
                 onClick = {
-                    episodiosContador = 0
+                    baniosContador = 0
                 }
             ) {
                 Text("Reiniciar contador")
