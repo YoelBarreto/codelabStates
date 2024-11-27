@@ -17,7 +17,7 @@ import androidx.compose.ui.window.application
 fun App() {
     MaterialTheme {
         Surface {
-            Column() {
+            Column {
                 EpisodiosCounter()
                 WellnessTaskList()
             }
